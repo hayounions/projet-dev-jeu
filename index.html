@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réaction Rapide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Modal -->
+    <div id="intro-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>🎮 Réaction Rapide - Comment jouer</h2>
+            <ul>
+                <li>1. Cliquez <strong>"Démarrer"</strong></li>
+                <li>2. Attendez le signal (écran change couleur)</li>
+                <li>⚠️ <strong>Pièges!</strong> Ignorez les boutons faux ("Attends...", "Piège?")</li>
+                <li>3. Cliquez <strong>EXACTEMENT</strong> quand "CLIQUER!" apparaît au centre</li>
+                <li>4. Votre temps s'affiche! Améliorez votre meilleur score</li>
+            </ul>
+            <button id="play-btn" class="modal-btn">Jouer!</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Réaction Rapide</h1>
+        <div class="game-info">
+            <p id="status">Cliquez "Démarrer" pour commencer</p>
+            <p id="last-time">Dernier temps: --</p>
+            <p id="best-time">Meilleur temps: --</p>
+        </div>
+        <button id="start-btn">Démarrer</button>
+        <div id="game-screen" class="game-screen">
+            <!-- Signal apparaîtra ici -->
+        </div>
+        <p class="instructions">Cliquez ou touchez l'écran dès que la couleur change!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
